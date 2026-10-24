@@ -31,7 +31,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #bcafff; outline-offs
 .nav-contact span { margin-left: 12px; color: var(--purple); }
 .menu-toggle { background: transparent; color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 7px 12px; }
 .hero { min-height: 735px; position: relative; display: grid; grid-template-columns: 1.12fr 1fr; align-items: center; gap: 30px; padding-block: 65px 110px; }
-.hero::before { content: ""; position: absolute; width: 650px; height: 650px; right: -50px; top: 0; background: radial-gradient(ellipse, #5d44b51b, transparent 65%); pointer-events: none; z-index: -1; }
+.hero::before { content: ""; position: absolute; width: min(100%, 650px); height: 650px; right: 0; top: 0; background: radial-gradient(ellipse, #5d44b51b, transparent 65%); pointer-events: none; z-index: -1; }
 .availability { display: inline-flex; align-items: center; gap: 9px; margin: 0 0 28px; border: 1px solid #38324d; background: #201d36; border-radius: 30px; padding: 6px 13px; font-size: 11px; color: #c8c2df; }
 .availability > span, .little-dot { display: inline-block; width: 6px; height: 6px; background: #85d8b3; border-radius: 50%; flex-shrink: 0; }
 .eyebrow { color: #a99ae3; font-size: 10px; letter-spacing: 2px; font-weight: 700; margin: 0 0 18px; }
