@@ -10,6 +10,28 @@ Alternatively, from the repository root, run `python3 -m http.server 8000` and o
 `http://localhost:8000/student-portfolio/`. Stop the preview server with Ctrl+C.
 This optional static file server is only for previewing; the website has no backend.
 
+## Publish to GitHub Pages
+
+The deployment workflow publishes `student-portfolio/` directly as the site root.
+It does not use or update the old `gh-pages` branch, so there is no separate copy
+of the website to keep in sync.
+
+1. In repository **Settings → Pages → Build and deployment**, select **GitHub Actions**
+   as the source instead of deploying from `gh-pages`.
+2. Merge the deployment workflow and portfolio changes into `main`. Changes to
+   `student-portfolio/` or the deployment workflow on `main` automatically deploy.
+   If the workflow is already merged, use **Actions → Deploy portfolio to GitHub Pages
+   → Run workflow** and select `main`.
+3. Wait for that workflow's **deploy** job to succeed, then open
+   <https://iamrlz.dev/copilot-app/> and verify that **Light mode** switches the page
+   to the light theme and **Dark mode** switches it back. Hard-refresh if the browser
+   still shows cached assets.
+
+Only `main` can deploy. If the `github-pages` environment restricts deployment
+branches, allow `main` in **Settings → Environments → github-pages**.
+Keep the existing custom domain and DNS configuration unchanged.
+No package installation, build command, or personal access token is required.
+
 ## Customize
 
 - Edit `student-portfolio/index.html` to replace the fictional student, skills, and illustrative projects with your own content.
