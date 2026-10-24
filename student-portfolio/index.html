@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A university student's portfolio of thoughtful digital experiences, creative projects, and growing skills.">
+  <meta name="theme-color" content="#101125">
+  <title>Alex Morgan — Student & Creative Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Alex Morgan home">am<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" hidden>Menu <span aria-hidden="true">☰</span></button>
+        <div class="nav-links" id="nav-links">
+          <a href="#home" class="active" aria-current="location">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact" class="nav-contact">Let's talk <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="availability"><span></span> Open to internships & collaborations</p>
+        <p class="eyebrow">HEY THERE, I'M ALEX <span aria-hidden="true">✳</span></p>
+        <h1 id="hero-title">Curious mind.<br>Creative code.<br><span>Endless possibilities.</span></h1>
+        <p class="hero-description">A computer science student turning big ideas into thoughtful digital experiences. Learning, building, and making things a little better along the way.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-details"><span><span aria-hidden="true">⌘</span> Computer Science Student</span><span><span class="little-dot"></span> Class of 2027</span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Illustration of a code editor surrounded by creative development symbols">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="spark spark-one">✦</span><span class="spark spark-two">✧</span>
+        <div class="floating-tag tag-top"><span>✦</span> Ideas → reality</div>
+        <div class="editor">
+          <div class="editor-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>hello-world.js</span><span>⌘</span></div>
+          <div class="editor-code" aria-hidden="true">
+            <div><b>01</b><span class="code-purple">const</span> developer = {</div>
+            <div><b>02</b>&nbsp; name: <span class="code-green">'Alex Morgan'</span>,</div>
+            <div><b>03</b>&nbsp; role: <span class="code-green">'Student & builder'</span>,</div>
+            <div><b>04</b>&nbsp; fueledBy: [<span class="code-green">'curiosity'</span>,</div>
+            <div><b>05</b>&nbsp;&nbsp;&nbsp; <span class="code-green">'coffee'</span>, <span class="code-green">'good ideas'</span>],</div>
+            <div><b>06</b>&nbsp; <span class="code-blue">build</span>: () <span class="code-purple">=></span> <span class="code-blue">somethingGreat</span>()</div>
+            <div><b>07</b>};</div>
+            <div><b>08</b></div>
+            <div><b>09</b><span class="code-muted">// Always a work in progress.</span></div>
+            <div><b>10</b>developer.<span class="code-blue">build</span>();<span class="cursor"></span></div>
+          </div>
+          <div class="editor-status"><span><span class="little-dot"></span> Ready to create</span><span>JavaScript</span></div>
+        </div>
+        <div class="floating-symbol symbol-code">&lt;/&gt;</div>
+        <div class="floating-symbol symbol-braces">{ }</div>
+        <div class="floating-tag tag-bottom"><span class="little-dot"></span> Learning something new, every day.</div>
+      </div>
+      <a href="#about" class="scroll-cue"><span aria-hidden="true">↓</span> A LITTLE MORE ABOUT ME</a>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-visual" aria-hidden="true"><span class="about-label">THE PERSON BEHIND THE PIXELS</span><div class="monogram">am<span>.</span></div><span class="visual-caption">A little logic. A lot of curiosity.</span><span class="visual-star">✳</span></div>
+        <div class="about-copy">
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2 id="about-title">More than just<br><span>lines of code.</span></h2>
+          <p>I'm Alex, a university student exploring the intersection of technology and creativity. I love taking a messy problem and turning it into something simple, useful, and enjoyable.</p>
+          <p>When I'm not debugging or chasing a new idea, you'll find me sketching, discovering new music, or taking the scenic route on a weekend walk.</p>
+          <div class="about-values"><span>✧ Lifelong learner</span><span>⌘ Problem solver</span><span>↗ Thoughtful builder</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / MY TOOLKIT</p><h2 id="skills-title">Skills in the making<span>.</span></h2></div><p>Tools I reach for.<br>Skills I keep sharpening.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span><h3>Frontend development</h3><p>Bringing ideas to life in the browser, one thoughtful detail at a time.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive design</span></div></article>
+        <article class="skill-card"><span class="skill-icon purple" aria-hidden="true">✧</span><h3>Design & experience</h3><p>Making things that feel as good to use as they look.</p><div class="chips"><span>UI / UX</span><span>Figma</span><span>Prototyping</span><span>Accessibility</span></div></article>
+        <article class="skill-card"><span class="skill-icon cyan" aria-hidden="true">⌘</span><h3>Beyond the browser</h3><p>A foundation in problem-solving and working better together.</p><div class="chips"><span>Python</span><span>Git & GitHub</span><span>Problem-solving</span><span>Teamwork</span></div></article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">03 / SELECTED WORK</p><h2 id="projects-title">Small projects. Big learning<span>.</span></h2></div><p>A few ideas I've brought to life.<br>Each one taught me something new.</p></div>
+        <p class="sample-note">Illustrative projects — a starting point for your own work.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-preview preview-planner" aria-hidden="true"><div class="planner"><div class="mini-sidebar">s<span>.</span><i></i><i></i><i></i></div><div class="planner-content"><div class="mini-topline">My workspace <span>✦</span></div><strong>Make room for focus.</strong><div class="mini-columns"><div><small>TO DO</small><i>Design exploration <em></em></i><i>Read chapter 04 <em></em></i></div><div><small>IN PROGRESS</small><i>Build something great <em></em></i></div></div></div></div><span class="preview-caption">ORGANIZE. FOCUS. ACHIEVE.</span></div>
+            <div class="project-info"><div class="project-number">01 / WEB APPLICATION</div><h3>StudySpace</h3><p>A calm, intuitive task planner designed to help students organize their day and find their focus.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><button class="project-link" data-project="studyspace" aria-expanded="false" aria-controls="studyspace-details">Explore project <span aria-hidden="true">↗</span></button><div class="project-details" id="studyspace-details" hidden><p><strong>Concept:</strong> A distraction-free study planner with task categories and a daily focus view. Replace this concept with your own project, screenshots, and verified demo links.</p></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-preview preview-weather" aria-hidden="true"><div class="weather"><div class="mini-topline">☁ Atmos <span>⌕</span></div><span class="weather-location">A little sunshine ahead</span><div class="weather-main"><strong>24°</strong><div class="sun"></div></div><span class="weather-condition">Mostly sunny · Feels like 26°</span><div class="forecast"><span>MON<br>☀<br>24°</span><span>TUE<br>☁<br>22°</span><span>WED<br>☀<br>25°</span><span>THU<br>☁<br>23°</span></div></div><span class="preview-caption">A FRESH TAKE ON THE FORECAST.</span></div>
+            <div class="project-info"><div class="project-number">02 / INTERFACE DESIGN</div><h3>Atmos Weather</h3><p>A playful weather dashboard that makes the forecast feel a little brighter, whatever the skies have planned.</p><div class="chips"><span>UI / UX</span><span>CSS</span><span>JavaScript</span></div><button class="project-link" data-project="atmos" aria-expanded="false" aria-controls="atmos-details">Explore project <span aria-hidden="true">↗</span></button><div class="project-details" id="atmos-details" hidden><p><strong>Concept:</strong> An accessible forecast interface using sample weather data. This illustration makes no location requests or external API calls. Add your own implementation here.</p></div></div>
+          </article>
+        </div>
+        <noscript><p>These are sample project concepts: a study planner and a weather dashboard. Enable JavaScript to expand their details.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel"><span class="contact-star" aria-hidden="true">✳</span><p class="eyebrow">04 / WHAT'S NEXT?</p><h2 id="contact-title">Good things start<br>with a <span>conversation.</span></h2><p>Have an idea, an opportunity, or just want to say hello?<br>I'd love to connect and see what we can create together.</p><div class="contact-placeholder"><span aria-hidden="true">↗</span> Your next collaboration starts here</div><p class="privacy-note">Demo portfolio · Contact links haven't been added yet.<br>No forms, tracking, or personal information collected.</p></div>
+    </section>
+  </main>
+  <footer class="container footer"><a class="logo" href="#home" aria-label="Back to home">am<span>.</span></a><p>Made with curiosity & a little caffeine.<br><span>© <span id="year">2026</span> Alex Morgan · Sample student portfolio</span></p><a class="back-top" href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
