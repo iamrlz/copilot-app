@@ -13,8 +13,8 @@ This optional static file server is only for previewing; the website has no back
 ## Customize
 
 - Edit `student-portfolio/index.html` to replace the fictional student, skills, and illustrative projects with your own content.
-- Adjust the blue and purple palette in `student-portfolio/styles.css`.
-- `student-portfolio/script.js` provides mobile navigation, active-section highlighting, expandable project descriptions, and the footer year.
+- Adjust the blue and purple palettes for both themes in `student-portfolio/styles.css`.
+- `student-portfolio/script.js` provides the dark/light theme toggle, mobile navigation, active-section highlighting, expandable project descriptions, and the footer year.
 - Contact is intentionally an informational placeholder, not a form. No personal information is requested or collected, and no external fonts, libraries, APIs, or analytics are used.
 
-The layout adapts to mobile and desktop, supports keyboard navigation and reduced-motion preferences, and keeps the main content accessible without JavaScript.
+Project cards lift and highlight on hover or keyboard focus. The layout adapts to mobile and desktop, supports smooth anchor navigation, keyboard navigation, and reduced-motion preferences, and keeps the main content accessible without JavaScript.
