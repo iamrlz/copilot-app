@@ -3,8 +3,17 @@ document.documentElement.classList.add('js');
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 const sectionLinks = [...navLinks.querySelectorAll('a')];
+const themeToggle = document.querySelector('.theme-toggle');
 
 menuToggle.hidden = false;
+
+themeToggle.addEventListener('click', () => {
+  const isLight = document.documentElement.dataset.theme !== 'light';
+  document.documentElement.dataset.theme = isLight ? 'light' : 'dark';
+  themeToggle.setAttribute('aria-pressed', String(isLight));
+  themeToggle.setAttribute('aria-label', `Switch to ${isLight ? 'dark' : 'light'} mode`);
+  themeToggle.firstChild.textContent = `${isLight ? 'Dark' : 'Light'} mode `;
+});
 
 function closeMenu() {
   menuToggle.setAttribute('aria-expanded', 'false');
